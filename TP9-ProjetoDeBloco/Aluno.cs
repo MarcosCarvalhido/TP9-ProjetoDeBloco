@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace TP9_ProjetoDeBloco
 {
-    internal class Aluno
+    public class Aluno
     {
         private int Matricula { get; set; }
         private string Nome { get; set; }
         private List<Turma> turmas { get; set;}
 
-        Aluno(int matricula, string nome, List<Turma> turmas)
+        public Aluno(int matricula, string nome)
         {
             Matricula = matricula;
             Nome = nome;
-            this.turmas = turmas;
+            turmas = new List<Turma>();
         }
 
         public void AddTurma(Turma turma)

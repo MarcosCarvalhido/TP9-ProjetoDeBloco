@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace TP9_ProjetoDeBloco
 {
-    internal class Turma
+    public class Turma
     {
         private int Codigo { get; set; }
         private Disciplina Disciplina { get; set; }
         private Professor Professor { get; set; }
         private List<Aluno> Alunos { get; set; }
 
-        Turma(int codigo, Disciplina disciplina, Professor professor, List<Aluno> alunos)
+        public Turma(int codigo, Disciplina disciplina, Professor professor, List<Aluno> alunos)
         {
             Codigo = codigo;
             Disciplina = disciplina;

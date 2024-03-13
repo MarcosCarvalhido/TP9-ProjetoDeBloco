@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 namespace TP9_ProjetoDeBloco
 {
-    internal class Professor
+    public class Professor
     {
         private int Matricula {  get; set; }
         private string Nome {  get; set; }
         private Turma Turma { get; set; }
 
-        Professor(int matricula, string nome, Turma turma)
+        public Professor(int matricula, string nome)
         {
             Matricula = matricula;
             Nome = nome;
-            Turma = turma;
         }
 
         public override string ToString()
